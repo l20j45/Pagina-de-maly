@@ -1,0 +1,190 @@
+	/*
+	-----------------------------------------------------------------------------------------------
+	// Clock Style 6
+	-----------------------------------------------------------------------------------------------
+	*/
+
+	.clock-container-6
+	{
+		transition: all 0.5s ease-in-out;
+		background-color: none;
+		border: 1px solid transparent;
+		border-radius: 1px;
+		color: #444;
+		
+		text-align: center;
+		padding: 10px;
+		
+		margin: 0 auto;
+	}
+	
+	#clock-6 .data-number
+	{
+		
+		border: none;
+		border-radius: 5px;
+		font-size: 3.8rem;
+		margin: 0px 5px;
+		display: inline-block;
+		color: #FFF;
+		text-shadow: 0 1px 2px rgba(0,0,0,0.6);
+		/* width: 100px; */
+    width: auto;
+    max-width: 100px;
+    min-width: 45px;
+    
+	}
+	#clock-6 .data-text
+	{
+		font-size: 0.8rem;
+		display: block;
+		color: #fff;
+		position: relative;
+		top: -10px;
+	}
+	#clock-6 .data-divider
+	{
+		font-size: 3.8rem;
+		position: relative;
+		top: -40px;
+		border-right: solid 2px #ccc;
+		margin: 10px 5px;
+	}
+	
+
+	@media only screen and (min-device-width: 280px) and (max-device-width: 319px)
+	{
+
+		#clock-6 .data-number 
+		{
+			font-size: 2rem;
+			width: 40px;
+		}
+		#clock-6 .data-text
+		{
+			top: -5px;
+		}
+		#clock-6 .data-divider 
+		{
+		  display: none;
+		}
+	}
+	
+	@media only screen and (min-device-width: 320px) and (max-device-width: 359px)
+	{
+    
+    .clock-container-6 {padding: 10px 0px;}
+
+		#clock-6 .data-number 
+		{
+			font-size: 2rem;
+			width: 45px;
+		}
+		#clock-6 .data-text
+		{
+			top: -5px;
+		}
+		#clock-6 .data-divider 
+		{
+		  /* display: none; */
+      font-size: 2.6rem;
+      top: -20px;
+      margin: 10px 5px;
+		}
+    
+    #clock-6 .data-number:nth-child(2) 
+    {
+      width: auto;
+    }
+    
+	}
+	@media only screen and (min-device-width: 360px) and (max-device-width: 400px)
+	{
+
+		#clock-6 .data-number 
+		{
+			font-size: 2rem;
+			width: 45px;
+		}
+		#clock-6 .data-text
+		{
+			top: -5px;
+		}
+		#clock-6 .data-divider 
+		{
+		  /* display: none; */
+      font-size: 2.6rem;
+      top: -20px;
+      margin: 10px 5px;
+		}
+    #clock-6 .data-number:nth-child(2) 
+    {
+      width: auto;
+    }
+	}
+		
+
+/* (400x800) Android */
+@media only screen and (min-device-width: 400px) and (max-device-width: 800px) 
+{
+    .clock-container-6 { padding: 20px 0px; }
+    
+		#clock-6 .data-number 
+		{
+			font-size: 3rem;
+			width: 65px;
+			margin: 5px;
+		}
+		#clock-6 .data-text
+		{
+			top: -5px;
+		}
+		#clock-6 .data-divider 
+		{
+		  /* display: none; */
+      font-size: 2.6rem;
+      top: -30px;
+		}
+    #clock-6 .data-number:nth-child(2) 
+    {
+      width: auto;
+    }
+}
+	
+	
+	
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
