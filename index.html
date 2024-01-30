@@ -2,18 +2,18 @@
 <html lang="es" dir="ltr">
   <head>
     <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script
+    <!-- <script
       async
       src="https://www.googletagmanager.com/gtag/js?id=G-0HPH8GFEV3"
-    ></script>
-    <script>
+    ></script> -->
+    <!-- <script>
       window.dataLayer = window.dataLayer || [];
       function gtag() {
         dataLayer.push(arguments);
       }
       gtag("js", new Date());
       gtag("config", "G-0HPH8GFEV3");
-    </script>
+    </script> -->
 
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -53,30 +53,6 @@
 
     <!-- Plugins & Libraries -->
 
-    <link rel="stylesheet" href="./assets/frontend/css/owl.carousel.min.css" />
-    <link rel="stylesheet" href="./assets/frontend/css/animate.css" />
-    <link rel="stylesheet" href="./assets/frontend/css/flaticon.css" />
-    <link rel="stylesheet" href="./assets/frontend/css/magnific-popup.css" />
-    <link rel="stylesheet" href="./assets/frontend/css/slick.min.css" />
-
-    <link rel="stylesheet" href="./assets/common/css/themify-icons.css" />
-    <link
-      rel="stylesheet"
-      href="./assets/frontend/css/jquery.ihavecookies.css"
-    />
-    <link rel="stylesheet" href="./assets/frontend/css/counter.css" />
-    <link
-      rel="stylesheet"
-      href="./assets/js/fancybox-master/dist/jquery.fancybox.min.css"
-    />
-    <link
-      rel="stylesheet"
-      href="./assets/frontend/plugins/green-audio-player/dist/css/green-audio-player.css"
-    />
-    <link
-      rel="stylesheet"
-      href="./assets/frontend/particles-js/particles-js.css"
-    />
     <link rel="stylesheet" href="./assets/frontend/css/timeline-style.css" />
     <link rel="stylesheet" href="./assets/frontend/css/clock-6.css" />
     <link rel="stylesheet" href="./assets/frontend/css/CodeInside.css" />
@@ -101,18 +77,24 @@
   <body class="fondo current-page-/">
     <!-- <canvas id="sky"></canvas> -->
 
-    <div class="audio-button-1" 
-  id="audio-button-1" 
-  style="background-color: #292929; outline: solid 3px #292929;">
-
-  <div class="boxContainerHide" style="animation: tilt-shaking 0.25s linear infinite;">
-	<i class="fas fa-music"></i>
-  </div>
-  <audio id="musica1" loop>
-    <source src="./assets/uploads/091820231315256508a1cd43752.mp3?rand=0125202413140665b2b2feea4fb" type="audio/mpeg">
-  </audio>
-
-</div>
+    <div
+      class="audio-button-1"
+      id="audio-button-1"
+      style="background-color: #292929; outline: solid 3px #292929"
+    >
+      <div
+        class="boxContainerHide"
+        style="animation: tilt-shaking 0.25s linear infinite"
+      >
+        <i class="fas fa-music"></i>
+      </div>
+      <audio id="musica1" loop>
+        <source
+          src="./assets/uploads/091820231315256508a1cd43752.mp3?rand=0125202413140665b2b2feea4fb"
+          type="audio/mpeg"
+        />
+      </audio>
+    </div>
     <!-- //TODO - Cambiar o quitar la cancion, como ellos quieran -->
 
     <div
@@ -998,22 +980,33 @@
     </div>
 
     <!-- Modal -->
-    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered modal-sm" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <div class="modal-title mx-auto">Nuestra boda</div>
-
-      </div>
-      <div class="modal-body text-center">
-        Bienvenido a la invitación
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-sm btn-link mx-auto" data-dismiss="modal" id="myModalClose">Aceptar</button>
+    <div
+      class="modal fade"
+      id="myModal"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="exampleModalCenterTitle"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered modal-sm" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <div class="modal-title mx-auto">Nuestra boda</div>
+          </div>
+          <div class="modal-body text-center">Bienvenido a la invitación</div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-sm btn-link mx-auto"
+              data-dismiss="modal"
+              id="myModalClose"
+            >
+              Aceptar
+            </button>
+          </div>
+        </div>
       </div>
     </div>
-  </div>
-</div>
     <!-- //TODO - desOcultar esto -->
 
     <!-- jquery -->
@@ -1036,88 +1029,7 @@
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
 
     <script src="https://cdn.jsdelivr.net/npm/tsparticles/dist/tsparticles.min.js"></script>
-    <script>
-      tsParticles
-        .loadJSON(
-          "tsparticles",
-          "./assets/frontend/particles-js/snow-config.json"
-        )
-        .then((container) => {
-          console.log("callback");
-        })
-        .catch((error) => {
-          console.error(error);
-        });
-    </script>
-    <!-- 
-<script src="./assets/frontend/plugins/puresnow/PureSnow.js"></script>
-<script src="./assets/frontend/plugins/snowflake/snow.js"></script>
- -->
 
-    <!-- Colorfull 
-<script src="./assets/frontend/plugins/snowfall/snowfall.js"></script> -->
-
-    <script>
-      let audioButton1 = false;
-
-      $("#audio-button-1").on("click", function () {
-        if (!audioButton1) {
-          console.log("Play!!");
-          $(".boxContainerHide").css({ display: "none" });
-          $(".boxContainer").css({ display: "flex" });
-          document.getElementById("musica1").play();
-        } else {
-          console.log("Stop!!");
-          $(".boxContainerHide").css({ display: "block" });
-          $(".boxContainer").css({ display: "none" });
-          document.getElementById("musica1").pause();
-        }
-        audioButton1 = !audioButton1;
-      });
-
-      function getCookie(cname) {
-        var name = cname + "=";
-        var decodedCookie = decodeURIComponent(document.cookie);
-        var ca = decodedCookie.split(";");
-        for (var i = 0; i < ca.length; i++) {
-          var c = ca[i];
-          while (c.charAt(0) == " ") {
-            c = c.substring(1);
-          }
-          if (c.indexOf(name) == 0) {
-            return c.substring(name.length, c.length);
-          }
-        }
-        return "";
-      }
-
-      function setCookie(cname, cvalue, exdays) {
-        var d = new Date();
-        d.setTime(d.getTime() + exdays * 24 * 60 * 60 * 1000);
-        var expires = "expires=" + d.toUTCString();
-        document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
-      }
-      new WOW().init();
-    </script>
-    <script>
-      (function ($) {
-        "use strict";
-        $(document).ready(function () {
-          $(document).on("change", "#langchange", function (e) {
-            $.ajax({
-              url: "./lang",
-              type: "GET",
-              data: {
-                lang: $(this).val(),
-              },
-              success: function (data) {
-                location.reload();
-              },
-            });
-          });
-        });
-      })(jQuery);
-    </script>
 
     <script
       src="https://cdn.jsdelivr.net/npm/add-to-calendar-button@1"
@@ -1141,35 +1053,6 @@
       };
       const button = document.getElementById("default-button");
       button.addEventListener("click", () => atcb_action(config, button));
-
-      /*
-<div class="atcb" style="display:none;">
-  {
-    "name":"Add the title of your event",
-    "description":"A nice description does not hurt",
-    "startDate":"2022-02-21",
-    "endDate":"2022-03-24",
-    "startTime":"10:13",
-    "endTime":"17:57",
-    "location":"Somewhere over the rainbow",
-    "label":"Add to Calendar",
-    "options":[
-      "Apple",
-      "Google",
-      "iCal",
-      "Microsoft365",
-      "MicrosoftTeams",
-      "Outlook.com",
-      "Yahoo"
-    ],
-    "timeZone":"Europe/Berlin",
-    "trigger":"click",
-    "inline":true,
-    "listStyle":"modal",
-    "iCalFileName":"Reminder-Event"
-  }
-</div>
-  */
     </script>
 
     <script type="application/javascript">
