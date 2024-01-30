@@ -1,0 +1,451 @@
+.fondo
+{
+background-image: url("https://evnto.site/crisyrox/assets/uploads/fondo-pagina/Copia de fondo5.jpg");
+}
+#marquee
+{
+font-size: 1rem;
+font-weight: 800;
+margin-top: 5px;
+width: 100%;
+height: 100px;
+}
+
+.boxed-btn.gd-bg
+{
+background-color: #292929;
+color: #ffffff;
+transition: background-color 0.2s ease-out;
+box-shadow: rgb(0 0 0 / 50%) 0px 3px 8px;
+}
+
+.boxed-btn.gd-bg:hover
+{
+/*
+background-image: -moz-linear-gradient(180deg, #f96834 99%) 0%, #d23a74 51%, #a12299;
+background-image: -webkit-linear-gradient(180deg, #f96834 99%) 0%, #d23a74 51%, #a12299;
+background-image: -ms-linear-gradient(180deg, #f96834 99%) 0%, #d23a74 51%, #a12299;
+*/
+
+
+border: solid 2px #292929;
+background-color: ;
+color: #292929;
+}
+
+
+.contact-form .submit-btn {
+background-color: #292929;
+color: #ffffff;
+transition: background-color 0.2s ease-out;
+box-shadow: rgb(0 0 0 / 50%) 0px 3px 8px;
+}
+
+.contact-form .submit-btn:hover
+{
+background-image: unset;
+background-color: #ffffff;
+color: #292929;
+border: solid 2px #292929;
+}
+
+:root {
+--main-color-one: #2b2fff;
+--secondary-color: 8;
+--heading-font: "Cinzel Decorative",sans-serif;
+--body-font:"Roboto",sans-serif;
+}
+
+.single-team-member-01 .thumb img
+{
+border: 5px solid #fff;
+box-shadow: 0 4px 6px 0 #ccc;
+}
+.single-team-member-01 .thumb-310 { width: 310px; height: 310px; }
+.single-team-member-01 .thumb-avatar {  width: 310px; height: 310px; }
+.savethedate { margin-top: 40px; text-align: center; }
+
+@media  only screen and (min-device-width: 320px) and (max-device-width: 480px)
+{
+.savethedate
+{
+margin-top: 40px;
+text-align: center;
+z-index: 1;
+position: relative;
+}
+
+}
+
+/*
+.single-team-member-01:nth-child(odd)
+{
+
+background-image: url('https://mibellaboda.com/appboda40/assets/uploads/media-uploader/heart-red1673561284.png');
+
+background-size: contain;
+background-repeat: no-repeat;
+padding: 30px;
+background-position: center;
+}
+.single-team-member-01:nth-child(even)
+{
+
+background-image: url('https://mibellaboda.com/appboda40/assets/uploads/media-uploader/zylnsi-removebg-preview1673561284.png');
+
+background-size: contain;
+background-repeat: no-repeat;
+padding: 30px;
+background-position: center;
+} */
+
+
+.name-testimonial
+{
+font-size: 34px;
+line-height: 50px;
+font-weight: 600;
+margin-bottom: 30px;
+}
+
+
+
+.btn-calendar
+{
+background-color: #292929;
+color: #ffffff;
+}
+
+
+.text-color { color: #ffffff !important; }
+.text-color p { color: #ffffff !important; }
+
+.text-wihte { color: #FFF !important;}
+.text-black { color: #3c3954;}
+
+#home::after
+{
+background-color: #000000; /* background-image: linear-gradient(120deg, #eaee44, #33d0ff); */
+opacity: 25%;
+}
+.header-area .header-area-inner .title
+{
+color: #ffffff;
+font-size: 68px;
+}
+.header-area .header-area-inner .subtitle { font-size: 20px; }
+
+
+
+
+/*
+#myvideo {
+position: fixed;
+right: 0;
+bottom: 0;
+min-width: 100%;
+min-height: 100%;
+} */
+
+
+/*
+///////////////////////////////////////////////////////////////////////////////////////////////
+// Mobile Design
+///////////////////////////////////////////////////////////////////////////////////////////////
+*/
+
+@media  only screen and (min-device-width: 320px) and (max-device-width: 480px)
+{
+
+.header-area .header-area-inner .title {  margin-bottom: 10px; font-size: 36px; }
+.header-area .header-area-inner .subtitle { font-size: 16px; text-align: center; }
+
+.dedicatorias-slider {  top: -230px; }
+
+.divider { height: 60px; }
+}
+
+
+.background-indicaciones
+{
+background-image: url('../../images/dummyImage.jpg');
+/* // TODO aqui iria la imagen del codigo de vestimenta */
+background-repeat: no-repeat;
+background-size: cover;
+background-position: top center;
+}
+
+.single-feature-item-01
+{
+background-color: rgba(255, 255, 255, 0.8);
+border-radius: 15px;
+min-height: auto;
+}
+
+
+
+
+
+@supports (-webkit-touch-callout: none)
+{
+/* CSS specific to iOS devices */
+#indicaciones {background-attachment: initial;}
+.section-title-ios
+{
+margin-bottom: 55px;
+position: relative;
+bottom: -180px;
+}
+}
+@supports  not (-webkit-touch-callout: none)
+{
+/* CSS for other than iOS devices */
+#indicaciones {background-attachment: fixed;}
+}
+
+
+
+.new-card .icon
+{
+margin-top: -120px;
+background: rgb(255, 255, 255, 1);
+width: 150px;
+height: 150px;
+border-radius: 50%;
+box-shadow: rgba(0, 0, 0, 0.6) 0px 2px 8px 0px;
+border: solid 3px #FFF;
+}
+
+.new-card .icon img
+{
+border-radius: 50%;
+}
+
+
+.new-card .icon .icon-img
+{
+max-width: 144px;
+border-radius: 50%;
+}
+
+@supports (-webkit-touch-callout: none)
+{
+/* CSS specific to iOS devices */
+
+.only-ios {display: none; }
+.non-ios {display: block; }
+}
+
+@supports  not (-webkit-touch-callout: none)
+{
+/* CSS for other than iOS devices */
+.only-ios {display: block; }
+.non-ios {display: none; }
+}
+
+.timeline-info span
+{
+background:#292929;
+color: #ffffff;
+}
+
+.image-rounded img {border-radius: 25px;}
+
+
+.mesa-bg
+{
+background-size: cover;
+background-repeat: no-repeat;
+background-position: top center;
+}
+
+
+
+
+.why-us-box-01 .why-us-icon
+{
+text-align: center;
+border-radius: 50%;
+box-shadow: rgba(0, 0, 0, 0.6) 0px 2px 8px 0px;
+border: solid 3px #FFF;
+max-width: 220px;
+margin: 0 auto;
+margin-top: -90px;
+}
+.why-us-box-01 .why-us-icon img
+{
+border-radius: 10px 10px 0 0;  width: 100%; border-radius: 50%;
+max-width: 220px;
+}
+.why-us-box-01 .content
+{
+height: 120px;
+
+}
+.why-us-box-01 .content .title
+{
+color: #505050 !important;
+margin-top: 25px;
+text-align: center
+}
+
+.section-paragraph-why
+{
+margin-bottom: 0;
+color: #333 !important;
+font-family: "Alata",sans-serif;
+text-align: center;
+padding: 20px;
+padding-top: 5px;
+margin-top: 10px;
+}
+
+.why-us-enlace
+{
+list-style: none;
+padding: 0;
+margin-top: 20px;
+text-align: center;
+}
+
+.why-us-enlace li {  display: inline-block; margin: 0px 10px; }
+
+.why-us-enlace li a.button
+{
+
+background-color: background-color: rgba(255,255,255,0.3);
+color: #666;
+/*
+background-color:#292929;
+color: #ffffff;*/
+font-size: 1.1rem;
+border-radius: 50%;
+width: 45px;
+height: 45px;
+padding: 12px 10px;
+box-shadow: 0px 2px 5px 0px rgb(0 0 0 / 20%);
+border: none;
+display: inline-block;
+}
+
+@supports (-webkit-touch-callout: none)
+{
+/* CSS specific to iOS devices */
+
+.only-ios {display: none; margin-top: 350px; }
+.non-ios {display: block; }
+#feature {background-attachment: initial;}
+.section-title-mesa-ios
+{
+margin-bottom: 55px;
+position: relative;
+bottom: -180px;
+
+
+}
+
+}
+
+@supports    not (-webkit-touch-callout: none)
+{
+/* CSS for other than iOS devices */
+.only-ios {display: block; }
+.non-ios {display: none; }
+#feature {background-attachment: fixed;}
+}
+
+
+.why-us-box-mb
+{
+margin-bottom: 130px;
+}
+
+.why-us-col:last-child .why-us-box-mb { margin-bottom: 0px; }
+.enlace-divider {display:block;height:80px; margin-top: 0px;}
+
+.single-team-member-01 .thumb-team
+{
+width: 220px; height: 220px;
+}
+
+.single-team-member-01 .description .name-team { padding: 10px; margin-bottom: 10px !important; font-size:20px;}
+.single-team-member-01 .description .designation-team  { font-size: 22px; }
+
+.galeria-titulo { font-size: 20px; }
+.galeria-subtitulo { font-size: 20px; }
+
+.btn-dark
+{
+background-color: #000;
+color: #FFF;
+display: block;
+transition: 0.3s;
+padding: 6px 25px;
+box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+.btn-dark:hover { background-color: #FFF; color: #000; border: solid 1px #000; }
+
+.form-check-label
+{
+margin-bottom: 0;
+display: block;
+border-radius: 5px;
+}
+.form-check-padding { padding: 5px 40px }
+
+
+.name-container { color: #000; font-size: 1.2rem;}
+.guest-ticket
+{
+box-shadow: rgba(0, 0, 0, 0.3) 0px 2px 6px;
+margin: 30px 10px;
+padding: 30px;
+border-radius: 5px;
+}
+
+@media  only screen and (max-width: 360px)
+{
+.content-form-wrapper { padding: 0 10px; }
+.guest-ticket { margin: 20px 0px;  padding: 20px; }
+.check-container { padding-top: 10px; }
+.name-container { text-align:center; }
+.form-check-block { display:block; }
+}
+
+@media  only screen and (max-width: 768px)
+{
+.guest-ticket { margin: 20px 0px;  padding: 10px; }
+.check-container { padding-top: 10px; }
+.name-container { text-align:center; }
+}
+
+.whatsapp-button {
+position: relative;
+top: 30px;
+}
+
+.back-to-whatsapp {
+display: block !important;
+width: 150px;
+height: 150px;
+background-color: #01C10E;
+color: #fff;
+text-align: center;
+line-height: 50px;
+border-radius: 50%;
+z-index: 99;
+font-size: 90px;
+cursor: pointer;
+-webkit-box-shadow: 0 0 5px rgba(0, 0, 0, .5);
+box-shadow: 0 0 5px rgba(0, 0, 0, .5);
+display: none;
+margin: 0 auto;
+}
+
+.text-target
+{
+font-weight: bold;
+font-size: 18px;
+}
+
+.image-rounded img {border-radius: 25px;}
