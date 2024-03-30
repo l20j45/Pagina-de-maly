@@ -72,6 +72,14 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.countdown/2.2.0/jquery.countdown.min.js"></script>
 
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css"
+    />
+
+    <link rel="stylesheet" href="./assets/frontend/css/arreglos.css" />
+
     <title>Mi bella boda - Mi bella boda</title>
   </head>
   <body class="fondo current-page-/">
@@ -88,26 +96,13 @@
       >
         <i class="fas fa-music"></i>
       </div>
-      <audio id="musica1" loop>
-        <source
-          src="./assets/uploads/091820231315256508a1cd43752.mp3?rand=0125202413140665b2b2feea4fb"
-          type="audio/mpeg"
-        />
-      </audio>
+      <audio id="miCancion" src="./assets/Cancion.mp3" preload="auto" autoplay></audio>
     </div>
     <!-- //TODO - Cambiar o quitar la cancion, como ellos quieran -->
 
-    <div
-      class="header-area header-bg"
-      id="home"
-      style="background-image: url(./assets/images/dummyImage.jpg)"
-    >
+    <div class="header-area header-bg headerArreglo" id="home">
       <!-- //ANCHOR - Cambiar la imagen y poner otra -->
-      <!--
-  <video autoplay muted loop id="myvideo">
-    <source src="./assets/uploads/video/fondo1.mp4" type="video/mp4">
-  </video>
-  -->
+
 
       <div class="header-area-inner">
         <div class="container">
@@ -146,41 +141,26 @@
             <div class="dedicatorias-slider">
               <div class="single-team-member-01 wow fadeIn">
                 <div class="thumb thumb-testimonial thumb-avatar">
-                  <img src="./assets/images/dummyImage.jpg" alt="" />
+                  <img src="./assets/images/circuloNew.webp" alt="" />
                   <div class="hover"></div>
                 </div>
-                <div class="description">
-                  <h4 class="name-testimonial">Mali y Rica</h4>
-                  <span class="designation"></span>
+                <div class="description m-sm-5">
+                  <h4 class="name-testimonial marginExtra">Mali y Rica</h4>
+                  <p>
+                    <b
+                      >“Hagamos de nuestras manos una sola mano. Hagamos de
+                      nuestros corazones un solo corazón. Hagamos de nuestros
+                      juramentos el último juramento. Sólo la
+                      muerte nos separará”</b
+                    >
+                    <!-- //ANCHOR - Dedicatoria mamalona -->
+                  </p>
                 </div>
               </div>
             </div>
           </div>
         </div>
 
-        <div class="row justify-content-center dedicatorias-phrase">
-          <div class="col-lg-8">
-            <div class="testimonial-carousel-wrapper">
-              <div class="testimonial-carousel slider-for">
-                <div class="single-testimonial-item">
-                  <div class="icon"></div>
-
-                  <div class="description">
-                    <p>
-                      <b
-                        >Dedicatoria bien mamalona o que Mali Dedicatoria bien
-                        mamalona o que Mali Dedicatoria bien mamalona o que Mali
-                        Dedicatoria bien mamalona o que Mali Dedicatoria bien
-                        mamalona o que Mali</b
-                      >
-                      <!-- //ANCHOR - Dedicatoria mamalona -->
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
 
         <!-- | Calendar Button | -->
         <div class="savethedate">
@@ -228,7 +208,17 @@
                 </div>
                 <div class="content">
                   <h4 class="title">Código de vestimenta</h4>
-                  <p>Color blanco con zapato cómodo o sandalias</p>
+                  <p class="font-weight-bold">Riguroso formal</p>
+                  <p>
+                    <span class="font-weight-bold font-weigh"> Hombres: </span>
+                  </p>
+                  <p>
+                    En caso de llevar traje negro
+                    <span class="font-weight-bold"><br>  No usar camisa negra </span>
+                  </p>
+                  <br>
+                  <p><span class="font-weight-bold"> Mujeres </span></p>
+                  <p>No negro, No Blanco</p>
                 </div>
               </div>
             </div>
@@ -254,7 +244,7 @@
             <ul class="timeline timeline-centered">
               <li class="timeline-item wow zoomIn fadeIn">
                 <div class="timeline-info">
-                  <span>Septiembre 15 2024, 19:00</span>
+                  <span>Septiembre 15 2024, 18:00</span>
                 </div>
                 <div class="timeline-marker"></div>
                 <div class="timeline-content">
@@ -266,7 +256,7 @@
               </li>
               <li class="timeline-item wow zoomIn fadeIn">
                 <div class="timeline-info">
-                  <span>Septiembre 15 2024, 20:00</span>
+                  <span>Septiembre 15 2024, 19:00</span>
                 </div>
                 <div class="timeline-marker"></div>
                 <div class="timeline-content">
@@ -289,7 +279,7 @@
               <div class="row">
                 <div class="col-lg-6">
                   <div class="img-wrapper box-shadow-90 image-rounded">
-                    <img src="./assets/images/dummyImage.jpg" alt="" />
+                    <img src="./assets/images/lugar de la fiesta.webp" alt="" />
                   </div>
                 </div>
                 <div class="col-lg-6">
@@ -326,7 +316,7 @@
     <section
       class="margin-top-120 padding-top-110 padding-bottom-50 mesa-bg"
       id="feature"
-      style="background-image: url(./assets/images/pantallaNegraDummy.jpg)"
+      style="background-image: url(./assets/images/fondo.webp)"
     >
       <div class="container">
         <div class="row justify-content-center mb-100">
@@ -338,8 +328,9 @@
                   <b
                     > No hay mejor regalo que tener tu compañía en la
                     celebración de nuestra boda, pero si deseas hacernos un
-                    detalle, contaremos con un buzón y sobres para tu obsequio.
-                    contamos con la siguiente opción:</b
+                    detalle contamos con una mesa de regalos o si gustas sumar
+                    kilómetros a nuestro viaje dejamos nuestra cuenta bancaria
+                    :</b
                   ><br />
                 </p>
               </div>
@@ -353,14 +344,14 @@
           <div class="col-lg-3 col-md-8 mx-auto why-us-col">
             <div class="why-us-box-01 why-us-box-mb">
               <div class="why-us-icon">
-                <img src="./assets/images/dummyImage.jpg" alt="" />
+                <img src="./assets/images/liverpool.webp" alt="" />
               </div>
 
               <div class="content">
                 <h4 class="text-color title">Liverpool</h4>
                 <div class="section-paragraph-why">
-                  <p><b>Número de evento: Pendiente</b></p>
-                  <p><b>Nombre evento: Nombre pendiente</b></p>
+                  <p><b>Número de evento: 51398897</b></p>
+                  <p><b>Nombre evento: Boda Rica y Mali </b></p>
                 </div>
               </div>
 
@@ -368,7 +359,7 @@
                 <li>
                   <a
                     class="button"
-                    href="https://mesaderegalos.liverpool.com.mx/milistaderegalos/51282425"
+                    href="https://mesaderegalos.liverpool.com.mx/milistaderegalos/51398897"
                     target="_blank"
                   >
                     <i class="fas fa-share"></i>
@@ -380,12 +371,28 @@
                     class="share-btn button"
                     data-text="&lt;p&gt;&lt;b&gt;Número de evento: 51282425&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;Nombre evento: Renovación de votos Cris y Rox&lt;/b&gt;&lt;/p&gt;"
                     data-title="Liverpool"
-                    data-url="https://mesaderegalos.liverpool.com.mx/milistaderegalos/51282425"
+                    data-url="https://mesaderegalos.liverpool.com.mx/milistaderegalos/51398897"
                   >
                     <i class="fas fa-share-alt"></i>
                   </a>
                 </li>
               </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container only-ios mt-5">
+        <div class="row justify-content-center">
+          <div class="col-lg-3 col-md-8 mx-auto why-us-col">
+            <div class="why-us-box-01 why-us-box-mb tajertaModificador">
+              <div class="content">
+                <h4 class="text-color title">Datos de <br> la tarjeta</h4>
+                <div class="section-paragraph-why">
+                  <p><b>Tarjeta: 4152 3139 2339 5136 </b></p>
+                  <p><b>BBVA Bancomer </b></p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -472,363 +479,325 @@
                     </div>
                   </div>
 
-                  <div class="row" style="padding: 20px">
-                    <div class="col-3 galeria-padding hover13">
+                  <div class="row flex gap-10">
+                    <div class="col-3 galleryImageContainer">
                       <a
-                        href="./assets/uploads/galeria/20230918130904_19742.jpg"
+                        href="./assets/uploads/galeria/1.webp"
                         data-fancybox="gallery"
+                        data-caption="Caption #1"
                       >
-                        <figure style="text-align: center; margin: 0px">
+                        <figure style="text-align: center">
                           <img
-                            src="./assets/uploads/galeria/thumb_20230918130904_19742.jpg"
+                            src="./assets/uploads/galeria/1.webp"
                             class="img-fluid"
-                            alt=""
-                            title=""
                           />
                         </figure>
                       </a>
                     </div>
-                    <div class="col-3 galeria-padding hover13">
+                    <div class="col-3 galleryImageContainer">
                       <a
-                        href="./assets/uploads/galeria/20230918130905_70940.jpg"
+                        href="./assets/uploads/galeria/2.webp"
                         data-fancybox="gallery"
+                        data-caption="Caption #2"
                       >
-                        <figure style="text-align: center; margin: 0px">
+                        <figure style="text-align: center">
                           <img
-                            src="./assets/uploads/galeria/thumb_20230918130905_70940.jpg"
+                            src="./assets/uploads/galeria/2.webp"
                             class="img-fluid"
-                            alt=""
-                            title=""
                           />
                         </figure>
                       </a>
                     </div>
-                    <div class="col-3 galeria-padding hover13">
+                    <div class="col-3 galleryImageContainer">
                       <a
-                        href="./assets/uploads/galeria/20230918130907_46294.jpg"
+                        href="./assets/uploads/galeria/3.webp"
                         data-fancybox="gallery"
+                        data-caption="Caption #3"
                       >
-                        <figure style="text-align: center; margin: 0px">
+                        <figure style="text-align: center">
                           <img
-                            src="./assets/uploads/galeria/thumb_20230918130907_46294.jpg"
+                            src="./assets/uploads/galeria/3.webp"
                             class="img-fluid"
-                            alt=""
-                            title=""
                           />
                         </figure>
                       </a>
                     </div>
-                    <div class="col-3 galeria-padding hover13">
+                    <div class="col-3 galleryImageContainer">
                       <a
-                        href="./assets/uploads/galeria/20230918130909_24016.jpg"
+                        href="./assets/uploads/galeria/4.webp"
                         data-fancybox="gallery"
+                        data-caption="Caption #4"
                       >
-                        <figure style="text-align: center; margin: 0px">
+                        <figure style="text-align: center">
                           <img
-                            src="./assets/uploads/galeria/thumb_20230918130909_24016.jpg"
+                            src="./assets/uploads/galeria/4.webp"
                             class="img-fluid"
-                            alt=""
-                            title=""
                           />
                         </figure>
                       </a>
                     </div>
-                    <div class="col-3 galeria-padding hover13">
+                    <div class="col-3 galleryImageContainer">
                       <a
-                        href="./assets/uploads/galeria/20230918130910_78102.jpg"
+                        href="./assets/uploads/galeria/5.webp"
                         data-fancybox="gallery"
+                        data-caption="Caption #5"
                       >
-                        <figure style="text-align: center; margin: 0px">
+                        <figure style="text-align: center">
                           <img
-                            src="./assets/uploads/galeria/thumb_20230918130910_78102.jpg"
+                            src="./assets/uploads/galeria/5.webp"
                             class="img-fluid"
-                            alt=""
-                            title=""
                           />
                         </figure>
                       </a>
                     </div>
-                    <div class="col-3 galeria-padding hover13">
+                    <div class="col-3 galleryImageContainer">
                       <a
-                        href="./assets/uploads/galeria/20230918130911_29502.jpg"
+                        href="./assets/uploads/galeria/6.webp"
                         data-fancybox="gallery"
+                        data-caption="Caption #6"
                       >
-                        <figure style="text-align: center; margin: 0px">
+                        <figure style="text-align: center">
                           <img
-                            src="./assets/uploads/galeria/thumb_20230918130911_29502.jpg"
+                            src="./assets/uploads/galeria/6.webp"
                             class="img-fluid"
-                            alt=""
-                            title=""
                           />
                         </figure>
                       </a>
                     </div>
-                    <div class="col-3 galeria-padding hover13">
+                    <div class="col-3 galleryImageContainer">
                       <a
-                        href="./assets/uploads/galeria/20230918130912_46145.jpg"
+                        href="./assets/uploads/galeria/7.webp"
                         data-fancybox="gallery"
+                        data-caption="Caption #7"
                       >
-                        <figure style="text-align: center; margin: 0px">
+                        <figure style="text-align: center">
                           <img
-                            src="./assets/uploads/galeria/thumb_20230918130912_46145.jpg"
+                            src="./assets/uploads/galeria/7.webp"
                             class="img-fluid"
-                            alt=""
-                            title=""
                           />
                         </figure>
                       </a>
                     </div>
-                    <div class="col-3 galeria-padding hover13">
+                    <div class="col-3 galleryImageContainer">
                       <a
-                        href="./assets/uploads/galeria/20230918130913_71594.jpg"
+                        href="./assets/uploads/galeria/8.webp"
                         data-fancybox="gallery"
+                        data-caption="Caption #8"
                       >
-                        <figure style="text-align: center; margin: 0px">
+                        <figure style="text-align: center">
                           <img
-                            src="./assets/uploads/galeria/thumb_20230918130913_71594.jpg"
+                            src="./assets/uploads/galeria/8.webp"
                             class="img-fluid"
-                            alt=""
-                            title=""
                           />
                         </figure>
                       </a>
                     </div>
-                    <div class="col-3 galeria-padding hover13">
+                    <div class="col-3 galleryImageContainer">
                       <a
-                        href="./assets/uploads/galeria/20230918130914_97831.jpg"
+                        href="./assets/uploads/galeria/9.webp"
                         data-fancybox="gallery"
+                        data-caption="Caption #9"
                       >
-                        <figure style="text-align: center; margin: 0px">
+                        <figure style="text-align: center">
                           <img
-                            src="./assets/uploads/galeria/thumb_20230918130914_97831.jpg"
+                            src="./assets/uploads/galeria/9.webp"
                             class="img-fluid"
-                            alt=""
-                            title=""
                           />
                         </figure>
                       </a>
                     </div>
-                    <div class="col-3 galeria-padding hover13">
+                    <div class="col-3 galleryImageContainer">
                       <a
-                        href="./assets/uploads/galeria/20230918130914_63077.jpg"
+                        href="./assets/uploads/galeria/10.webp"
                         data-fancybox="gallery"
+                        data-caption="Caption #10"
                       >
-                        <figure style="text-align: center; margin: 0px">
+                        <figure style="text-align: center">
                           <img
-                            src="./assets/uploads/galeria/thumb_20230918130914_63077.jpg"
+                            src="./assets/uploads/galeria/10.webp"
                             class="img-fluid"
-                            alt=""
-                            title=""
                           />
                         </figure>
                       </a>
                     </div>
-                    <div class="col-3 galeria-padding hover13">
+                    <div class="col-3 galleryImageContainer">
                       <a
-                        href="./assets/uploads/galeria/20230918130915_42954.jpg"
+                        href="./assets/uploads/galeria/11.webp"
                         data-fancybox="gallery"
+                        data-caption="Caption #11"
                       >
-                        <figure style="text-align: center; margin: 0px">
+                        <figure style="text-align: center">
                           <img
-                            src="./assets/uploads/galeria/thumb_20230918130915_42954.jpg"
+                            src="./assets/uploads/galeria/11.webp"
                             class="img-fluid"
-                            alt=""
-                            title=""
                           />
                         </figure>
                       </a>
                     </div>
-                    <div class="col-3 galeria-padding hover13">
+                    <div class="col-3 galleryImageContainer">
                       <a
-                        href="./assets/uploads/galeria/20230918130916_41870.jpg"
+                        href="./assets/uploads/galeria/12.webp"
                         data-fancybox="gallery"
+                        data-caption="Caption #12"
                       >
-                        <figure style="text-align: center; margin: 0px">
+                        <figure style="text-align: center">
                           <img
-                            src="./assets/uploads/galeria/thumb_20230918130916_41870.jpg"
+                            src="./assets/uploads/galeria/12.webp"
                             class="img-fluid"
-                            alt=""
-                            title=""
                           />
                         </figure>
                       </a>
                     </div>
-                    <div class="col-3 galeria-padding hover13">
+                    <div class="col-3 galleryImageContainer">
                       <a
-                        href="./assets/uploads/galeria/20230918130916_62708.jpg"
+                        href="./assets/uploads/galeria/13.webp"
                         data-fancybox="gallery"
+                        data-caption="Caption #13"
                       >
-                        <figure style="text-align: center; margin: 0px">
+                        <figure style="text-align: center">
                           <img
-                            src="./assets/uploads/galeria/thumb_20230918130916_62708.jpg"
+                            src="./assets/uploads/galeria/13.webp"
                             class="img-fluid"
-                            alt=""
-                            title=""
                           />
                         </figure>
                       </a>
                     </div>
-                    <div class="col-3 galeria-padding hover13">
+                    <div class="col-3 galleryImageContainer">
                       <a
-                        href="./assets/uploads/galeria/20230918130917_47016.jpg"
+                        href="./assets/uploads/galeria/14.webp"
                         data-fancybox="gallery"
+                        data-caption="Caption #14"
                       >
-                        <figure style="text-align: center; margin: 0px">
+                        <figure style="text-align: center">
                           <img
-                            src="./assets/uploads/galeria/thumb_20230918130917_47016.jpg"
+                            src="./assets/uploads/galeria/14.webp"
                             class="img-fluid"
-                            alt=""
-                            title=""
                           />
                         </figure>
                       </a>
                     </div>
-                    <div class="col-3 galeria-padding hover13">
+                    <div class="col-3 galleryImageContainer">
                       <a
-                        href="./assets/uploads/galeria/20230918130917_85289.jpg"
+                        href="./assets/uploads/galeria/15.webp"
                         data-fancybox="gallery"
+                        data-caption="Caption #15"
                       >
-                        <figure style="text-align: center; margin: 0px">
+                        <figure style="text-align: center">
                           <img
-                            src="./assets/uploads/galeria/thumb_20230918130917_85289.jpg"
+                            src="./assets/uploads/galeria/15.webp"
                             class="img-fluid"
-                            alt=""
-                            title=""
                           />
                         </figure>
                       </a>
                     </div>
-                    <div class="col-3 galeria-padding hover13">
+                    <div class="col-3 galleryImageContainer">
                       <a
-                        href="./assets/uploads/galeria/20230918130920_78370.jpg"
+                        href="./assets/uploads/galeria/16.webp"
                         data-fancybox="gallery"
+                        data-caption="Caption #16"
                       >
-                        <figure style="text-align: center; margin: 0px">
+                        <figure style="text-align: center">
                           <img
-                            src="./assets/uploads/galeria/thumb_20230918130920_78370.jpg"
+                            src="./assets/uploads/galeria/16.webp"
                             class="img-fluid"
-                            alt=""
-                            title=""
                           />
                         </figure>
                       </a>
                     </div>
-                    <div class="col-3 galeria-padding hover13">
+                    <div class="col-3 galleryImageContainer">
                       <a
-                        href="./assets/uploads/galeria/20230918130921_55762.jpg"
+                        href="./assets/uploads/galeria/17.webp"
                         data-fancybox="gallery"
+                        data-caption="Caption #17"
                       >
-                        <figure style="text-align: center; margin: 0px">
+                        <figure style="text-align: center">
                           <img
-                            src="./assets/uploads/galeria/thumb_20230918130921_55762.jpg"
+                            src="./assets/uploads/galeria/17.webp"
                             class="img-fluid"
-                            alt=""
-                            title=""
                           />
                         </figure>
                       </a>
                     </div>
-                    <div class="col-3 galeria-padding hover13">
+                    <div class="col-3 galleryImageContainer">
                       <a
-                        href="./assets/uploads/galeria/20230918130921_74246.jpg"
+                        href="./assets/uploads/galeria/18.webp"
                         data-fancybox="gallery"
+                        data-caption="Caption #18"
                       >
-                        <figure style="text-align: center; margin: 0px">
+                        <figure style="text-align: center">
                           <img
-                            src="./assets/uploads/galeria/thumb_20230918130921_74246.jpg"
+                            src="./assets/uploads/galeria/18.webp"
                             class="img-fluid"
-                            alt=""
-                            title=""
                           />
                         </figure>
                       </a>
                     </div>
-                    <div class="col-3 galeria-padding hover13">
+                    <div class="col-3 galleryImageContainer">
                       <a
-                        href="./assets/uploads/galeria/20230918130922_62630.jpg"
+                        href="./assets/uploads/galeria/19.webp"
                         data-fancybox="gallery"
+                        data-caption="Caption #19"
                       >
-                        <figure style="text-align: center; margin: 0px">
+                        <figure style="text-align: center">
                           <img
-                            src="./assets/uploads/galeria/thumb_20230918130922_62630.jpg"
+                            src="./assets/uploads/galeria/19.webp"
                             class="img-fluid"
-                            alt=""
-                            title=""
                           />
                         </figure>
                       </a>
                     </div>
-                    <div class="col-3 galeria-padding hover13">
+                    <div class="col-3 galleryImageContainer">
                       <a
-                        href="./assets/uploads/galeria/20230918130925_38040.jpg"
+                        href="./assets/uploads/galeria/20.webp"
                         data-fancybox="gallery"
+                        data-caption="Caption #20"
                       >
-                        <figure style="text-align: center; margin: 0px">
+                        <figure style="text-align: center">
                           <img
-                            src="./assets/uploads/galeria/thumb_20230918130925_38040.jpg"
+                            src="./assets/uploads/galeria/20.webp"
                             class="img-fluid"
-                            alt=""
-                            title=""
                           />
                         </figure>
                       </a>
                     </div>
-                    <div class="col-3 galeria-padding hover13">
+                    <div class="col-3 galleryImageContainer">
                       <a
-                        href="./assets/uploads/galeria/20230920154215_16877.jpg"
+                        href="./assets/uploads/galeria/21.webp"
                         data-fancybox="gallery"
+                        data-caption="Caption #21"
                       >
-                        <figure style="text-align: center; margin: 0px">
+                        <figure style="text-align: center">
                           <img
-                            src="./assets/uploads/galeria/thumb_20230920154215_16877.jpg"
+                            src="./assets/uploads/galeria/21.webp"
                             class="img-fluid"
-                            alt=""
-                            title=""
                           />
                         </figure>
                       </a>
                     </div>
-                    <div class="col-3 galeria-padding hover13">
+                    <div class="col-3 galleryImageContainer">
                       <a
-                        href="./assets/uploads/galeria/20230920154235_48627.jpg"
+                        href="./assets/uploads/galeria/22.webp"
                         data-fancybox="gallery"
+                        data-caption="Caption #22"
                       >
-                        <figure style="text-align: center; margin: 0px">
+                        <figure style="text-align: center">
                           <img
-                            src="./assets/uploads/galeria/thumb_20230920154235_48627.jpg"
+                            src="./assets/uploads/galeria/22.webp"
                             class="img-fluid"
-                            alt=""
-                            title=""
                           />
                         </figure>
                       </a>
                     </div>
-                    <div class="col-3 galeria-padding hover13">
+                    <div class="col-3 galleryImageContainer">
                       <a
-                        href="./assets/uploads/galeria/20230920154236_64191.jpg"
+                        href="./assets/uploads/galeria/23.webp"
                         data-fancybox="gallery"
+                        data-caption="Caption #23"
                       >
-                        <figure style="text-align: center; margin: 0px">
+                        <figure style="text-align: center">
                           <img
-                            src="./assets/uploads/galeria/thumb_20230920154236_64191.jpg"
+                            src="./assets/uploads/galeria/23.webp"
                             class="img-fluid"
-                            alt=""
-                            title=""
-                          />
-                        </figure>
-                      </a>
-                    </div>
-                    <div class="col-3 galeria-padding hover13">
-                      <a
-                        href="./assets/uploads/galeria/20230920154237_42252.jpg"
-                        data-fancybox="gallery"
-                      >
-                        <figure style="text-align: center; margin: 0px">
-                          <img
-                            src="./assets/uploads/galeria/thumb_20230920154237_42252.jpg"
-                            class="img-fluid"
-                            alt=""
-                            title=""
                           />
                         </figure>
                       </a>
@@ -841,6 +810,7 @@
         </div>
       </div>
     </div>
+
     <section class="dynamic-page-content-area mt-100">
       <div class="contact-area contact-bg" style="padding: 0px" id="contacto">
         <div class="container">
@@ -864,7 +834,7 @@
                               <a
                                 target="_blank"
                                 rel="nofollow"
-                                href="https://wa.me/5213322357340?text=%C2%A1Hola%21%2C+Quiero+confirmar+mi+invitaci%C3%B3n"
+                                href="https://wa.me/5213314140070?text=%C2%A1Hola%21%2C+Quiero+confirmar+mi+invitaci%C3%B3n"
                               >
                                 <i class="fab fa-whatsapp"></i>
                               </a>
@@ -919,9 +889,73 @@
                   >
                     <div class="card-body">
                       <p>
-                        <b>Recomendaciones :</b>&nbsp;Favor de confirmar su
-                        asistencia a la sanación espiritual y pedir detalles a
-                        la novia<br />
+                        Favor de confirmar su asistencia lo antes posible para
+                        asegurar tu lugar. En caso de no confirmar antes del 31
+                        de julio se dará por hecho que no asistirás.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="card">
+                  <div class="card-header" id="headingTwo_0">
+                    <h5 class="mb-0">
+                      <a
+                        data-toggle="collapse"
+                        data-target="#collapseTwo_0"
+                        role="button"
+
+                        aria-controls="collapseTwo_0"
+                      >
+                        NOTAS
+                      </a>
+                    </h5>
+                  </div>
+                  <div
+                    id="collapseTwo_0"
+                    class="collapse show"
+                    aria-labelledby="headingTwo_0"
+                    data-parent="#accordion"
+                  >
+                    <div class="card-body">
+                      <p>
+                        Favor de proporcionar al fotógrafo profesional de la
+                        boda todo el espacio necesario para que nuestros
+                        recuerdos queden fabulosos. No interferir entre el
+                        fotógrafo y los novios tratando de tomar fotos propias,
+                        en cuanto tengamos las fotos oficiales con gusto se las
+                        compartimos.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="card">
+                  <div class="card-header" id="headingTree_0">
+                    <h5 class="mb-0">
+                      <a
+                        data-toggle="collapse"
+                        data-target="#collapseTree_0"
+                        role="button"
+                        aria-expanded="true"
+                        aria-controls="collapseTree_0"
+                      >
+                        RECOMENDACIONES
+                      </a>
+                    </h5>
+                  </div>
+                  <div
+                    id="collapseTree_0"
+                    class="collapse show"
+                    aria-labelledby="headingTree_0"
+                    data-parent="#accordion"
+                  >
+                    <div class="card-body">
+                      <p>
+                        Recuerda ser puntual a la ceremonia para que vivamos
+                        juntos toda la experiencia de nuestro día especial. Y no
+                        olvides asistir con la mejor actitud para que juntos
+                        hagamos de esta fecha un día memorable.
                       </p>
                     </div>
                   </div>
@@ -932,7 +966,7 @@
           </div>
           <div class="col-lg-6">
             <div class="img-wrapper image-rounded">
-              <img src="./assets/images/dummyImage.jpg" alt="" />
+              <img src="./assets/images/graciasPorAcompañarnos.webp" alt="" />
             </div>
           </div>
         </div>
@@ -940,7 +974,7 @@
     </div>
 
     <footer class="footer-area footer-bg">
-      <!-- style="background-image: url(./assets/uploads/media-uploader/piedepagina16480758691652378765.jpg);" -->
+      <!-- style="background-image: url(./assets/uploads/media-uploader/piedepagina16480758691652378765.webp);" -->
       <div class="footer-top-area">
         <div class="container">
           <div class="p-2 text-center d-flex justify-content-center">
@@ -948,7 +982,7 @@
               class="footer-anchor footer-button"
               rel="nofollow"
               target="_blank"
-              href="https://wa.me/5213329345342?text=Hola,%20me%20gustaría%20una%20invitación%20como%20esta"
+              href="https://wa.me/5213318231058?text=Hola,%20me%20gustaría%20una%20invitación%20como%20esta"
             >
               ¡Quiero una invitación como esta!
             </a>
@@ -961,13 +995,6 @@
             <div class="col-lg-12 text-center">
               <div class="copyright-inner">
                 &copy; Copyright 2024 . Todos los derechos reservados,
-
-                <a
-                  class="footer-anchor"
-                  target="_blank"
-                  href="https://mibellaboda.com/website/poltica-de-privacidad"
-                  >Aviso de privacidad</a
-                >
               </div>
             </div>
           </div>
@@ -1024,18 +1051,22 @@
     <script src="./assets/frontend/js/main.js"></script>
     <script src="./assets/frontend/js/dynamic-script.js"></script>
     <script src="./assets/frontend/js/jquery.counterup.min.js"></script>
-    <script src="./assets/js/fancybox-master/dist/jquery.fancybox.min.js"></script>
 
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
 
     <script src="https://cdn.jsdelivr.net/npm/tsparticles/dist/tsparticles.min.js"></script>
-
 
     <script
       src="https://cdn.jsdelivr.net/npm/add-to-calendar-button@1"
       async
       defer
     ></script>
+
+    <script>
+      Fancybox.bind('[data-fancybox="gallery"]', {
+        // Your custom options for a specific gallery
+      });
+    </script>
     <script type="application/javascript">
       const config = {
         name: "Mali &amp; Ricardo",
@@ -1293,5 +1324,30 @@
         });
       });
     </script>
+
+    
+<script>
+	let audioButton1 = false;
+	
+	$("#audio-button-1").on( "click", function()
+	{
+		if(!audioButton1)
+		{
+			console.log("Play!!");
+			$(".boxContainerHide").css({"display":"none"});
+			$(".boxContainer").css({"display":"flex"});
+			document.getElementById('miCancion').play();
+		}
+		else
+		{
+			console.log("Stop!!");
+			$(".boxContainerHide").css({"display":"block"});
+			$(".boxContainer").css({"display":"none"});
+			document.getElementById('miCancion').pause();
+		}
+		audioButton1 = !audioButton1;
+	});
+</script>
   </body>
 </html>
+

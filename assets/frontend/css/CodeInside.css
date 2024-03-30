@@ -62,7 +62,7 @@ border: 5px solid #fff;
 box-shadow: 0 4px 6px 0 #ccc;
 }
 .single-team-member-01 .thumb-310 { width: 310px; height: 310px; }
-.single-team-member-01 .thumb-avatar {  width: 310px; height: 310px; }
+.single-team-member-01 .thumb-avatar {  width: 310px; height: 200px; }
 .savethedate { margin-top: 40px; text-align: center; }
 
 @media  only screen and (min-device-width: 320px) and (max-device-width: 480px)
@@ -105,7 +105,7 @@ background-position: center;
 font-size: 34px;
 line-height: 50px;
 font-weight: 600;
-margin-bottom: 30px;
+
 }
 
 
@@ -168,7 +168,7 @@ min-height: 100%;
 
 .background-indicaciones
 {
-background-image: url('../../images/dummyImage.jpg');
+background-image: url('../../images/23.webp');
 /* // TODO aqui iria la imagen del codigo de vestimenta */
 background-repeat: no-repeat;
 background-size: cover;

@@ -1,0 +1,27 @@
+#home {
+  background-size: cover;
+  background-image: url(../../images/headerNew.webp);
+}
+
+.galleryImageContainer {
+  height: 75px;
+  overflow: hidden;
+  margin-bottom: 20px;
+  object-fit: cover;
+}
+
+
+.tajertaModificador{
+    margin-top: 20px;
+    min-height: 200px;
+}
+
+.accordion-wrapper .card .card-header h5 a[aria-expanded="true"]:after, .accordion-wrapper .card .card-header h5 a:after{
+    content: "";
+}
+
+
+.marginExtra{
+    display: inline-block;
+}
+
